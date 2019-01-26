@@ -33,6 +33,7 @@ RUN apt-get update && apt-get install -y \
     libtest-warn-perl \
     make \
     cpanminus \
+    procps \
     wget \
     unzip \
     && rm -rf /var/lib/apt/lists/*
