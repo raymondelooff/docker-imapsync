@@ -42,6 +42,6 @@ RUN wget https://github.com/imapsync/imapsync/archive/master.zip -O /tmp/imapsyn
     && unzip /tmp/imapsync.zip -d /tmp/imapsync \
     && mv /tmp/imapsync/imapsync-master /app \
     && chmod +x /app/imapsync \
-    && rm -rf /tmp/imapsync
+    && rm -rf /tmp/imapsync*
 
 ENTRYPOINT ["/app/imapsync"]
