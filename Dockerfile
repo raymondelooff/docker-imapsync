@@ -35,12 +35,10 @@ RUN apt-get update && apt-get install -y \
     cpanminus \
     procps \
     wget \
-    unzip \
     && rm -rf /var/lib/apt/lists/*
 
-RUN wget https://github.com/imapsync/imapsync/archive/master.zip -O /tmp/imapsync.zip \
-    && unzip /tmp/imapsync.zip -d /tmp/imapsync \
-    && mv /tmp/imapsync/imapsync-master /app \
+RUN mkdir -p /app \
+    && wget https://imapsync.lamiral.info/imapsync -O /app/imapsync \
     && chmod +x /app/imapsync \
     && rm -rf /tmp/imapsync*
 
