@@ -1,4 +1,4 @@
-FROM debian:stretch-20190122-slim
+FROM debian:stretch-20190326-slim
 
 LABEL maintainer="raymondelooff"
 
