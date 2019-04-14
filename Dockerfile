@@ -39,7 +39,6 @@ RUN apt-get update && apt-get install -y \
 
 RUN mkdir -p /app \
     && wget https://imapsync.lamiral.info/imapsync -O /app/imapsync \
-    && chmod +x /app/imapsync \
-    && rm -rf /tmp/imapsync*
+    && chmod +x /app/imapsync
 
 ENTRYPOINT ["/app/imapsync"]
