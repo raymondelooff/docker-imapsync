@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     libcrypt-openssl-rsa-perl \
     libdata-uniqid-perl \
     libfile-copy-recursive-perl \
+    libfile-tail-perl \
     libio-socket-inet6-perl \
     libio-socket-ssl-perl \
     libio-tee-perl \
