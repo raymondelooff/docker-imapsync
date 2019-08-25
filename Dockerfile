@@ -38,7 +38,7 @@ RUN apt-get update && apt-get install -y \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
-# imapsync 1.945
+# imapsync 1.956
 RUN mkdir -p /app \
     && wget https://imapsync.lamiral.info/imapsync -O /app/imapsync \
     && chmod +x /app/imapsync
