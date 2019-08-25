@@ -44,3 +44,5 @@ RUN mkdir -p /app \
     && chmod +x /app/imapsync
 
 ENTRYPOINT ["/app/imapsync"]
+
+RUN perl -c /app/imapsync
