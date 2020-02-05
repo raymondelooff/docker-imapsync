@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     libcgi-pm-perl \
     libcrypt-openssl-rsa-perl \
     libdata-uniqid-perl \
+    libencode-imaputf7-perl \
     libfile-copy-recursive-perl \
     libfile-tail-perl \
     libio-socket-inet6-perl \
