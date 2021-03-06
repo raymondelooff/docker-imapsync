@@ -4,8 +4,8 @@ LABEL maintainer="raymondelooff"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+# https://imapsync.lamiral.info/INSTALL.d/INSTALL.Debian.txt
 RUN apt-get update && apt-get install -y \
-    libjson-webtoken-perl \
     libauthen-ntlm-perl \
     libcgi-pm-perl \
     libcrypt-openssl-rsa-perl \
@@ -39,7 +39,7 @@ RUN apt-get update && apt-get install -y \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
-# imapsync 1.977
+# imapsync 2.107
 RUN mkdir -p /app \
     && wget https://imapsync.lamiral.info/imapsync -O /app/imapsync \
     && chmod +x /app/imapsync
