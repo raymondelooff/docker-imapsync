@@ -34,12 +34,13 @@ RUN apt-get update && apt-get install -y \
     libtest-deep-perl \
     libtest-warn-perl \
     make \
+    time \
     cpanminus \
     procps \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
-# imapsync 2.107
+# imapsync 2.148
 RUN mkdir -p /app \
     && wget https://imapsync.lamiral.info/imapsync -O /app/imapsync \
     && chmod +x /app/imapsync
